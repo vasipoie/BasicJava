@@ -26,7 +26,7 @@ public class ExceptionExample04 {
 				throw new NickNameLengthException();
 			}
 		} catch (NickNameException e) {	//catch (Exception e) 로 처리하면, 모든 에러가 다 모임
-			System.out.println("금지어가 포함되어있습니다.");
+			System.out.println(e);
 		}
 		catch (NickNameLengthException e) {
 			System.out.println("길이가 너무 깁니다.");
