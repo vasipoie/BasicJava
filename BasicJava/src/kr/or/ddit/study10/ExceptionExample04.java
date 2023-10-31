@@ -15,7 +15,7 @@ import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 public class ExceptionExample04 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("닉네임 입력 : ");
+		System.out.print("닉네임 입력 : ");
 		String nickName = sc.nextLine();
 	
 		try {
@@ -27,6 +27,7 @@ public class ExceptionExample04 {
 			}
 		} catch (NickNameException e) {	//catch (Exception e) 로 처리하면, 모든 에러가 다 모임
 			System.out.println(e);
+//			e.printStackTrace();
 		}
 		catch (NickNameLengthException e) {
 			System.out.println("길이가 너무 깁니다.");
